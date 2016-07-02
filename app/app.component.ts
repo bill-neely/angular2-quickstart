@@ -81,7 +81,7 @@ export class AppComponent implements OnInit {
 	title = 'Tour of Heroes';
 	heroes: Hero[];
 	getHeroes() {
-		this.heroService.getHeroes().then(heroes => this.heroes = heroes);
+		this.heroService.getHeroesSlowly().then(heroes => this.heroes = heroes);
 	}
 	selectedHero: Hero;
 	onSelect(hero: Hero) { this.selectedHero = hero; };
